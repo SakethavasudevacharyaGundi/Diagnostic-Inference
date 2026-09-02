@@ -1,0 +1,7 @@
+test_name,value,unit
+Insulin,12.0,mU/L
+Ferritin,180.0,ug/L
+Total IgE,150.0,KU/L
+Hemoglobin,11.0,g/dL
+WBC,1.0,10^3/uL
+RandomTest,50.0,U/L
