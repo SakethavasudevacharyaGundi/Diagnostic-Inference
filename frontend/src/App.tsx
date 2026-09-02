@@ -7,53 +7,53 @@ import { analyzeLabs } from "./services/api.js";
 const Icons = {
   Dna: () => (
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M2 15c6.667-6 13.333 0 20-6"/><path d="M9 22c1.798-3.333 5.518-3.333 7-6"/>
-      <path d="M2 9c6.667-6 13.333 0 20-6"/><path d="M15 2c-1.798 3.333-5.518 3.333-7 6"/>
+      <path d="M2 15c6.667-6 13.333 0 20-6" /><path d="M9 22c1.798-3.333 5.518-3.333 7-6" />
+      <path d="M2 9c6.667-6 13.333 0 20-6" /><path d="M15 2c-1.798 3.333-5.518 3.333-7 6" />
     </svg>
   ),
   Upload: () => (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/>
+      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><polyline points="17 8 12 3 7 8" /><line x1="12" y1="3" x2="12" y2="15" />
     </svg>
   ),
   Plus: () => (
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-      <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+      <line x1="12" y1="5" x2="12" y2="19" /><line x1="5" y1="12" x2="19" y2="12" />
     </svg>
   ),
   X: () => (
     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
-      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
     </svg>
   ),
   Check: () => (
     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="20 6 9 17 4 12"/>
+      <polyline points="20 6 9 17 4 12" />
     </svg>
   ),
   Beaker: () => (
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M9 3h6v8l4.5 7.5A1 1 0 0118.63 20H5.37a1 1 0 01-.87-1.5L9 11V3z"/>
+      <path d="M9 3h6v8l4.5 7.5A1 1 0 0118.63 20H5.37a1 1 0 01-.87-1.5L9 11V3z" />
     </svg>
   ),
   Sparkle: () => (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 3v1m0 16v1M4.22 4.22l.7.7m13.16 13.16l.7.7M3 12h1m16 0h1M4.22 19.78l.7-.7M18.36 5.64l.7-.7M12 7a5 5 0 100 10A5 5 0 0012 7z"/>
+      <path d="M12 3v1m0 16v1M4.22 4.22l.7.7m13.16 13.16l.7.7M3 12h1m16 0h1M4.22 19.78l.7-.7M18.36 5.64l.7-.7M12 7a5 5 0 100 10A5 5 0 0012 7z" />
     </svg>
   ),
   ArrowRight: () => (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
     </svg>
   ),
   Spinner: () => (
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" className="animate-spin">
-      <path d="M12 2v4" strokeOpacity="1"/><path d="M12 18v4" strokeOpacity=".25"/><path d="M4.93 4.93l2.83 2.83" strokeOpacity=".75"/><path d="M16.24 16.24l2.83 2.83" strokeOpacity=".25"/><path d="M2 12h4" strokeOpacity=".5"/><path d="M18 12h4" strokeOpacity=".25"/><path d="M4.93 19.07l2.83-2.83" strokeOpacity=".25"/><path d="M16.24 7.76l2.83-2.83" strokeOpacity=".5"/>
+      <path d="M12 2v4" strokeOpacity="1" /><path d="M12 18v4" strokeOpacity=".25" /><path d="M4.93 4.93l2.83 2.83" strokeOpacity=".75" /><path d="M16.24 16.24l2.83 2.83" strokeOpacity=".25" /><path d="M2 12h4" strokeOpacity=".5" /><path d="M18 12h4" strokeOpacity=".25" /><path d="M4.93 19.07l2.83-2.83" strokeOpacity=".25" /><path d="M16.24 7.76l2.83-2.83" strokeOpacity=".5" />
     </svg>
   ),
   RotateCcw: () => (
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-5.24"/>
+      <polyline points="1 4 1 10 7 10" /><path d="M3.51 15a9 9 0 1 0 .49-5.24" />
     </svg>
   ),
 };
@@ -61,7 +61,7 @@ const Icons = {
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 type Severity = "CRITICAL" | "WARNING" | "NORMAL" | "UNKNOWN" | "INVALID";
-type Source   = "LOCAL" | "MCP" | "N/A";
+type Source = "LOCAL" | "MCP" | "N/A";
 type AppState = "idle" | "analyzing" | "results";
 
 interface LabRow { id: string; testName: string; value: string; unit: string; }
@@ -75,27 +75,27 @@ interface AnalysisResult {
 // ─── Reference data ───────────────────────────────────────────────────────────
 
 const LOCAL: Record<string, ReferenceRange> = {
-  hemoglobin:          { low: 12.0, high: 16.0,  unit: "g/dL",    source: "LOCAL" },
-  platelet:            { low: 150,  high: 450,    unit: "×10³/µL", source: "LOCAL" },
-  "platelet count":    { low: 150,  high: 450,    unit: "×10³/µL", source: "LOCAL" },
-  ferritin:            { low: 12,   high: 150,    unit: "ng/mL",   source: "LOCAL" },
-  wbc:                 { low: 4.5,  high: 11.0,   unit: "×10³/µL", source: "LOCAL" },
-  "white blood cell":  { low: 4.5,  high: 11.0,   unit: "×10³/µL", source: "LOCAL" },
-  glucose:             { low: 70,   high: 100,    unit: "mg/dL",   source: "LOCAL" },
-  creatinine:          { low: 0.6,  high: 1.2,    unit: "mg/dL",   source: "LOCAL" },
-  sodium:              { low: 136,  high: 145,    unit: "mEq/L",   source: "LOCAL" },
+  hemoglobin: { low: 12.0, high: 16.0, unit: "g/dL", source: "LOCAL" },
+  platelet: { low: 150, high: 450, unit: "×10³/µL", source: "LOCAL" },
+  "platelet count": { low: 150, high: 450, unit: "×10³/µL", source: "LOCAL" },
+  ferritin: { low: 12, high: 150, unit: "ng/mL", source: "LOCAL" },
+  wbc: { low: 4.5, high: 11.0, unit: "×10³/µL", source: "LOCAL" },
+  "white blood cell": { low: 4.5, high: 11.0, unit: "×10³/µL", source: "LOCAL" },
+  glucose: { low: 70, high: 100, unit: "mg/dL", source: "LOCAL" },
+  creatinine: { low: 0.6, high: 1.2, unit: "mg/dL", source: "LOCAL" },
+  sodium: { low: 136, high: 145, unit: "mEq/L", source: "LOCAL" },
 };
 const MCP: Record<string, ReferenceRange> = {
-  potassium:   { low: 3.5,  high: 5.0,   unit: "mEq/L",  source: "MCP" },
-  chloride:    { low: 98,   high: 106,   unit: "mEq/L",  source: "MCP" },
-  bicarbonate: { low: 22,   high: 29,    unit: "mEq/L",  source: "MCP" },
-  albumin:     { low: 3.5,  high: 5.0,   unit: "g/dL",   source: "MCP" },
-  bilirubin:   { low: 0.2,  high: 1.2,   unit: "mg/dL",  source: "MCP" },
-  alt:         { low: 7,    high: 56,    unit: "U/L",    source: "MCP" },
-  ast:         { low: 10,   high: 40,    unit: "U/L",    source: "MCP" },
-  tsh:         { low: 0.4,  high: 4.0,   unit: "mIU/L",  source: "MCP" },
-  calcium:     { low: 8.5,  high: 10.5,  unit: "mg/dL",  source: "MCP" },
-  hba1c:       { low: 0,    high: 5.7,   unit: "%",      source: "MCP" },
+  potassium: { low: 3.5, high: 5.0, unit: "mEq/L", source: "MCP" },
+  chloride: { low: 98, high: 106, unit: "mEq/L", source: "MCP" },
+  bicarbonate: { low: 22, high: 29, unit: "mEq/L", source: "MCP" },
+  albumin: { low: 3.5, high: 5.0, unit: "g/dL", source: "MCP" },
+  bilirubin: { low: 0.2, high: 1.2, unit: "mg/dL", source: "MCP" },
+  alt: { low: 7, high: 56, unit: "U/L", source: "MCP" },
+  ast: { low: 10, high: 40, unit: "U/L", source: "MCP" },
+  tsh: { low: 0.4, high: 4.0, unit: "mIU/L", source: "MCP" },
+  calcium: { low: 8.5, high: 10.5, unit: "mg/dL", source: "MCP" },
+  hba1c: { low: 0, high: 5.7, unit: "%", source: "MCP" },
 };
 
 const TEST_METADATA: Record<string, string> = {
@@ -121,16 +121,16 @@ const TEST_METADATA: Record<string, string> = {
 const KNOWN_TESTS = Object.keys(TEST_METADATA);
 
 const KNOWLEDGE: Record<string, string[]> = {
-  hemoglobin:  ["Hematology Reference Manual, 4th Ed.", "CLSI H26-A2"],
-  platelet:    ["Hematology Reference Manual, 4th Ed.", "Williams Hematology, 9th Ed."],
-  potassium:   ["Electrolyte Physiology Reference", "Clinical Chemistry Standards Vol. 3"],
-  ferritin:    ["Iron Studies Reference Handbook", "CLSI C28-A3"],
-  wbc:         ["Hematology Reference Manual, 4th Ed.", "Leukocyte Classification Guide"],
-  glucose:     ["ADA Standards of Care 2024", "Clinical Chemistry Standards Vol. 3"],
-  default:     ["Clinical Laboratory Reference Handbook", "Standard Laboratory Values, 12th Ed."],
+  hemoglobin: ["Hematology Reference Manual, 4th Ed.", "CLSI H26-A2"],
+  platelet: ["Hematology Reference Manual, 4th Ed.", "Williams Hematology, 9th Ed."],
+  potassium: ["Electrolyte Physiology Reference", "Clinical Chemistry Standards Vol. 3"],
+  ferritin: ["Iron Studies Reference Handbook", "CLSI C28-A3"],
+  wbc: ["Hematology Reference Manual, 4th Ed.", "Leukocyte Classification Guide"],
+  glucose: ["ADA Standards of Care 2024", "Clinical Chemistry Standards Vol. 3"],
+  default: ["Clinical Laboratory Reference Handbook", "Standard Laboratory Values, 12th Ed."],
 };
 
-const SEV_ORDER: Severity[] = ["CRITICAL","WARNING","INVALID","UNKNOWN","NORMAL"];
+const SEV_ORDER: Severity[] = ["CRITICAL", "WARNING", "INVALID", "UNKNOWN", "NORMAL"];
 
 // ─── Severity styles ──────────────────────────────────────────────────────────
 
@@ -186,7 +186,7 @@ function getRef(name: string) {
 }
 function classify(v: number, r: ReferenceRange): Severity {
   const span = r.high - r.low;
-  if (v < r.low)  return (r.low - v)  / span > 0.3 ? "CRITICAL" : "WARNING";
+  if (v < r.low) return (r.low - v) / span > 0.3 ? "CRITICAL" : "WARNING";
   if (v > r.high) return (v - r.high) / span > 0.3 ? "CRITICAL" : "WARNING";
   return "NORMAL";
 }
@@ -200,9 +200,9 @@ function buildNextStep(name: string, sev: Severity, v: number, r: ReferenceRange
   const k = name.toLowerCase();
   if (sev === "NORMAL") return "No immediate action required. Continue routine monitoring per clinical protocol.";
   if (sev === "CRITICAL" && v < r.low) {
-    if (k === "hemoglobin")                      return "Repeat CBC to confirm. Assess for active blood loss, hemolysis, or nutritional deficiency. Evaluate transfusion threshold and consider hematology referral.";
+    if (k === "hemoglobin") return "Repeat CBC to confirm. Assess for active blood loss, hemolysis, or nutritional deficiency. Evaluate transfusion threshold and consider hematology referral.";
     if (k === "platelet" || k === "platelet count") return "Repeat CBC to confirm thrombocytopenia. Evaluate bleeding risk and marrow function. Hematology referral warranted.";
-    if (k === "potassium")                        return "Urgent ECG monitoring. Assess for diuretic use or GI losses. Potassium replacement and cardiology notification as indicated.";
+    if (k === "potassium") return "Urgent ECG monitoring. Assess for diuretic use or GI losses. Potassium replacement and cardiology notification as indicated.";
     return `Urgent clinical review. Repeat ${name} to confirm and investigate underlying cause.`;
   }
   if (sev === "CRITICAL" && v > r.high) {
@@ -213,24 +213,30 @@ function buildNextStep(name: string, sev: Severity, v: number, r: ReferenceRange
 }
 function analyzeRow(row: LabRow): AnalysisResult {
   const num = parseFloat(row.value);
-  const k   = row.testName.trim().toLowerCase();
+  const k = row.testName.trim().toLowerCase();
   if (!row.value.trim() || isNaN(num) || num < 0)
-    return { id: row.id, testName: row.testName || "Unknown", value: isNaN(num) ? null : num, rawValue: row.value, unit: row.unit,
+    return {
+      id: row.id, testName: row.testName || "Unknown", value: isNaN(num) ? null : num, rawValue: row.value, unit: row.unit,
       severity: "INVALID", range: null,
       explanation: "The supplied value is not a valid clinical measurement. Negative or non-numeric values cannot be classified against a reference interval.",
-      nextStep: "Verify the entered value and unit, then re-submit for analysis.", knowledgeSources: [] };
+      nextStep: "Verify the entered value and unit, then re-submit for analysis.", knowledgeSources: []
+    };
   const range = getRef(row.testName);
   if (!range)
-    return { id: row.id, testName: row.testName, value: num, rawValue: row.value, unit: row.unit,
+    return {
+      id: row.id, testName: row.testName, value: num, rawValue: row.value, unit: row.unit,
       severity: "UNKNOWN", range: null,
       explanation: "No reference interval is available for this test in the local dictionary or MCP knowledge base. The result cannot be classified without a valid reference range.",
-      nextStep: "Verify the test name against standard laboratory nomenclature. Provide a reference range manually if available.", knowledgeSources: [] };
+      nextStep: "Verify the test name against standard laboratory nomenclature. Provide a reference range manually if available.", knowledgeSources: []
+    };
   const sev = classify(num, range);
-  return { id: row.id, testName: row.testName, value: num, rawValue: row.value, unit: row.unit,
+  return {
+    id: row.id, testName: row.testName, value: num, rawValue: row.value, unit: row.unit,
     severity: sev, range,
     explanation: buildExplanation(row.testName, num, sev, range),
     nextStep: buildNextStep(row.testName, sev, num, range),
-    knowledgeSources: KNOWLEDGE[k] ?? KNOWLEDGE["default"] };
+    knowledgeSources: KNOWLEDGE[k] ?? KNOWLEDGE["default"]
+  };
 }
 
 // ─── Shared badge ─────────────────────────────────────────────────────────────
@@ -276,10 +282,10 @@ function RangeBar({ value, range }: { value: number; range: ReferenceRange }) {
   const minDisplay = Math.min(range.low - span * 0.3, value - span * 0.15);
   const maxDisplay = Math.max(range.high + span * 0.3, value + span * 0.15);
   const tot = maxDisplay - minDisplay;
-  
+
   const pct = Math.max(0, Math.min(100, ((value - minDisplay) / tot) * 100));
   const inR = value >= range.low && value <= range.high;
-  
+
   const nL = ((range.low - minDisplay) / tot) * 100;
   const nW = (span / tot) * 100;
 
@@ -288,7 +294,7 @@ function RangeBar({ value, range }: { value: number; range: ReferenceRange }) {
       <div className="relative h-1.5 rounded-full" style={{ background: "rgba(255,255,255,0.2)" }}>
         {/* Reference interval segment */}
         <div className="absolute top-0 h-full rounded-full" style={{ left: `${nL}%`, width: `${nW}%`, background: "rgba(255,255,255,0.35)" }} />
-        
+
         {/* Value dot and label */}
         <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full border-2 z-10 shadow"
           style={{ left: `${pct}%`, background: inR ? "#fff" : "#fecaca", borderColor: "rgba(255,255,255,0.5)" }}>
@@ -397,12 +403,11 @@ function ResultsLayout({ results }: { results: AnalysisResult[] }) {
 
       {/* ── Left list ── */}
       <div className="w-72 shrink-0 px-5 py-6 overflow-y-auto glass-scrollbar"
-        style={{ 
-          borderRight: "1px solid",
-          borderImage: "linear-gradient(to bottom, transparent, rgba(255,255,255,0.6), transparent) 1",
-          background: "rgba(255,255,255,0.22)", 
-          backdropFilter: "blur(12px)", 
-          WebkitBackdropFilter: "blur(12px)" 
+        style={{
+          borderRight: "1px solid rgba(255, 255, 255, 0.4)",
+          background: "rgba(255,255,255,0.22)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)"
         }}>
         {/* Header */}
         <div className="mb-6 px-1 shrink-0">
@@ -471,15 +476,15 @@ function ResultsLayout({ results }: { results: AnalysisResult[] }) {
 // ─── Utilities ────────────────────────────────────────────────────────────────
 
 let _id = 0;
-const uid      = () => `r${++_id}`;
+const uid = () => `r${++_id}`;
 const emptyRow = (): LabRow => ({ id: uid(), testName: "", value: "", unit: "" });
-const delay    = (ms: number) => new Promise(r => setTimeout(r, ms));
+const delay = (ms: number) => new Promise(r => setTimeout(r, ms));
 
 type Step = "ranges" | "classifying" | "explaining";
 const STEPS: Array<{ key: Step; label: string }> = [
-  { key: "ranges",      label: "Resolving reference ranges"   },
-  { key: "classifying", label: "Classifying results"          },
-  { key: "explaining",  label: "Generating clinical guidance" },
+  { key: "ranges", label: "Resolving reference ranges" },
+  { key: "classifying", label: "Classifying results" },
+  { key: "explaining", label: "Generating clinical guidance" },
 ];
 
 function parseCSV(text: string): Partial<LabRow>[] {
@@ -494,10 +499,10 @@ function parseCSV(text: string): Partial<LabRow>[] {
 // ─── App ──────────────────────────────────────────────────────────────────────
 
 export default function App() {
-  const [rows, setRows]         = useState<LabRow[]>([emptyRow()]);
-  const [results, setResults]   = useState<AnalysisResult[]>([]);
+  const [rows, setRows] = useState<LabRow[]>([emptyRow()]);
+  const [results, setResults] = useState<AnalysisResult[]>([]);
   const [appState, setAppState] = useState<AppState>("idle");
-  const [step, setStep]         = useState<Step | null>(null);
+  const [step, setStep] = useState<Step | null>(null);
   const [dragging, setDragging] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
@@ -511,7 +516,7 @@ export default function App() {
       return next;
     }));
   };
-  const addRow    = () => setRows(prev => [...prev, emptyRow()]);
+  const addRow = () => setRows(prev => [...prev, emptyRow()]);
   const removeRow = (id: string) =>
     setRows(prev => prev.length > 1 ? prev.filter(r => r.id !== id) : prev);
 
@@ -531,7 +536,7 @@ export default function App() {
     if (!valid.length) return;
     setAppState("analyzing");
     setStep("ranges");
-    
+
     try {
       const payload = valid.map(r => ({
         test_name: r.testName,
@@ -552,26 +557,26 @@ export default function App() {
       const response = await analyzeLabs(payload);
       isDone = true;
       const data = response.results || response;
-      
+
       const mappedResults: AnalysisResult[] = data.map((r: any, i: number) => {
-         return {
-           id: "mapped" + i,
-           testName: r.test_name,
-           value: r.value,
-           rawValue: String(r.value),
-           unit: r.unit,
-           severity: r.status.toUpperCase() as Severity,
-           range: r.ref ? { low: r.ref.min, high: r.ref.max, unit: r.ref.unit, source: r.reference_source === 'MCP' ? 'MCP' : 'LOCAL' } : null,
-           explanation: r.explanation,
-           nextStep: r.next_step,
-           knowledgeSources: [] 
-         };
+        return {
+          id: "mapped" + i,
+          testName: r.test_name,
+          value: r.value,
+          rawValue: String(r.value),
+          unit: r.unit,
+          severity: r.status.toUpperCase() as Severity,
+          range: r.ref ? { low: r.ref.min, high: r.ref.max, unit: r.ref.unit, source: r.reference_source === 'MCP' ? 'MCP' : 'LOCAL' } : null,
+          explanation: r.explanation,
+          nextStep: r.next_step,
+          knowledgeSources: []
+        };
       });
 
       setResults(mappedResults);
       setStep(null);
       setAppState("results");
-    } catch(err) {
+    } catch (err) {
       console.error(err);
       setAppState("idle");
     }
@@ -610,7 +615,7 @@ export default function App() {
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
                 className="group-hover:-translate-x-0.5 transition-transform">
-                <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+                <line x1="19" y1="12" x2="5" y2="12" /><polyline points="12 19 5 12 12 5" />
               </svg>
               Back
             </button>
@@ -675,7 +680,7 @@ export default function App() {
 
                   {/* Col headers */}
                   <div className="grid grid-cols-[2fr_1fr_1fr_20px] gap-2.5 mb-2 pr-2">
-                    {["Test Name","Value","Unit",""].map(h => (
+                    {["Test Name", "Value", "Unit", ""].map(h => (
                       <p key={h} className="text-[10px] font-semibold tracking-widest uppercase" style={{ color: "#94a3b8" }}>{h}</p>
                     ))}
                   </div>
@@ -691,7 +696,7 @@ export default function App() {
                             className="w-full px-3 py-2 text-sm rounded-lg outline-none transition-all"
                             style={{ background: "rgba(255,255,255,0.8)", border: "1px solid rgba(203,213,225,0.7)", color: "#0f172a", caretColor: "#0891b2" }}
                             onFocus={e => (e.currentTarget.style.borderColor = "#0891b2")}
-                            onBlur={e  => (e.currentTarget.style.borderColor = "rgba(203,213,225,0.7)")} />
+                            onBlur={e => (e.currentTarget.style.borderColor = "rgba(203,213,225,0.7)")} />
                           <datalist id={`tl-${row.id}`}>{KNOWN_TESTS.map(t => <option key={t} value={t} />)}</datalist>
                         </div>
                         <input type="number" value={row.value} onChange={e => updateRow(row.id, "value", e.target.value)}
@@ -699,13 +704,13 @@ export default function App() {
                           className="w-full px-3 py-2 text-sm rounded-lg outline-none font-mono transition-all"
                           style={{ background: "rgba(255,255,255,0.8)", border: "1px solid rgba(203,213,225,0.7)", color: "#0f172a", caretColor: "#0891b2" }}
                           onFocus={e => (e.currentTarget.style.borderColor = "#0891b2")}
-                          onBlur={e  => (e.currentTarget.style.borderColor = "rgba(203,213,225,0.7)")} />
+                          onBlur={e => (e.currentTarget.style.borderColor = "rgba(203,213,225,0.7)")} />
                         <input type="text" value={row.unit} onChange={e => updateRow(row.id, "unit", e.target.value)}
                           placeholder="g/dL"
                           className="w-full px-3 py-2 text-sm rounded-lg outline-none font-mono transition-all"
                           style={{ background: "rgba(255,255,255,0.8)", border: "1px solid rgba(203,213,225,0.7)", color: "#0f172a", caretColor: "#0891b2" }}
                           onFocus={e => (e.currentTarget.style.borderColor = "#0891b2")}
-                          onBlur={e  => (e.currentTarget.style.borderColor = "rgba(203,213,225,0.7)")} />
+                          onBlur={e => (e.currentTarget.style.borderColor = "rgba(203,213,225,0.7)")} />
                         <button onClick={() => removeRow(row.id)} disabled={rows.length === 1}
                           className="w-5 h-5 flex items-center justify-center rounded transition-all disabled:opacity-0"
                           style={{ color: "#cbd5e1" }}
@@ -729,7 +734,7 @@ export default function App() {
                       </span>
                       Add result
                     </button>
-                    
+
                     <button onClick={() => setRows([emptyRow()])} className="flex items-center gap-2 text-xs transition-colors"
                       style={{ color: "#94a3b8" }}
                       onMouseEnter={e => (e.currentTarget.style.color = "#f87171")}
@@ -763,15 +768,15 @@ export default function App() {
                 <div className="rounded-2xl px-5 py-4 space-y-3 animate-fade-in"
                   style={{ background: "rgba(255,255,255,0.55)", backdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.75)" }}>
                   {STEPS.map((s, i) => {
-                    const done   = i < stepIdx;
+                    const done = i < stepIdx;
                     const active = i === stepIdx;
                     return (
                       <div key={s.key} className="flex items-center gap-3">
                         <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 transition-all"
                           style={{ background: done ? "#10b981" : active ? "rgba(8,145,178,0.1)" : "rgba(203,213,225,0.3)", border: `1px solid ${done ? "#10b981" : active ? "#0891b2" : "#e2e8f0"}` }}>
-                          {done   ? <span style={{ color: "white" }}><Icons.Check /></span>
-                          : active ? <Icons.Spinner />
-                          : <span className="w-1 h-1 rounded-full" style={{ background: "#cbd5e1" }} />}
+                          {done ? <span style={{ color: "white" }}><Icons.Check /></span>
+                            : active ? <Icons.Spinner />
+                              : <span className="w-1 h-1 rounded-full" style={{ background: "#cbd5e1" }} />}
                         </div>
                         <span className="text-xs" style={{ color: done ? "#94a3b8" : active ? "#0f172a" : "#cbd5e1", fontWeight: active ? 500 : 400, textDecoration: done ? "line-through" : "none" }}>
                           {s.label}
