@@ -53,22 +53,40 @@ The Agent calls an MCP server tool, `reference_range_lookup(test_name)`, when a 
 
 ## Setup
 
-### Backend
+### Prerequisites
+- **Python 3.10+**
+- **Node.js 18+**
+- **Ollama**: Must be installed and running locally.
+
+### 1. Start the LLM (Ollama)
+```bash
+# Pull the required model
+ollama pull qwen2.5:7b
+
+# Ensure the Ollama server is running (usually runs in background automatically)
+ollama serve
+```
+
+### 2. Backend
+*(Note: No `.env` configuration is required since the LLM runs locally. The MCP server is imported and runs directly in the same process, so no separate MCP startup is needed).*
 
 ```bash
 cd backend
+python -m venv venv
+source venv/bin/activate  # Or `venv\Scripts\activate` on Windows
 pip install -r requirements.txt
-# add your LLM provider API key / Ollama setup to .env
 uvicorn main:app --reload
 ```
 
-### Frontend
-
+### 3. Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+
+### 4. Test Data
+Working test files are located in the `/test_data` directory. You can drag and drop these CSV files directly into the React frontend to test the analysis pipeline.
 
 ## API
 
