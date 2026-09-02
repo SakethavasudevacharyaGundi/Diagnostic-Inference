@@ -21,4 +21,10 @@ def reference_range_lookup(test_name: str) -> dict:
             "recommended_followup": "Rutin kontrol"
         }
     }
-    return fallback_db.get(test_name, {})
+    
+    # Case-insensitive lookup
+    for k, v in fallback_db.items():
+        if k.lower() == test_name.lower():
+            return v
+            
+    return {}
