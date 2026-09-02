@@ -5,8 +5,20 @@ def reference_range_lookup(test_name: str) -> dict:
     MCP tool to provide a fallback lookup for unknown tests.
     """
     fallback_db = {
-        "Potassium": {"min": 3.5, "max": 5.0, "unit": "mEq/L"},
-        "Sodium": {"min": 135.0, "max": 145.0, "unit": "mEq/L"},
-        "Calcium": {"min": 8.5, "max": 10.2, "unit": "mg/dL"}
+        "Platelet": {
+            "min": 150.0, "max": 450.0, "unit": "10^3/uL",
+            "unit_description": "Bin/µL",
+            "recommended_followup": "Rutin kontrol"
+        },
+        "WBC": {
+            "min": 5.0, "max": 10.6, "unit": "10^3/uL",
+            "unit_description": "Bin/µL",
+            "recommended_followup": "Rutin kontrol"
+        },
+        "Hemoglobin": {
+            "min": 12.0, "max": 15.0, "unit": "g/dL",
+            "unit_description": "Gram/Desilitre",
+            "recommended_followup": "Rutin kontrol"
+        }
     }
     return fallback_db.get(test_name, {})
